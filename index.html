@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Emmanuel F. V.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            display: flex;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 35%;
+            background: #333; /* Fondo oscuro */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px 0 0 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #777;
+            margin: 0 auto 20px;
+            overflow: hidden;
+        }
+        .profile-pic img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .main-content {
+            width: 65%;
+            padding: 20px;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            position: relative;
+        }
+        .section h2 {
+            color: #333; /* Texto oscuro */
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 15px;
+        }
+        .section h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background: #777; /* Línea vertical gris */
+            border-radius: 2px;
+        }
+        .contacto, .habilidades {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .icon {
+            font-size: 1.2em;
+            margin-right: 10px;
+            color: #777; /* Iconos en gris */
+        }
+        .main-content .section p, .main-content .section ul li {
+            color: #333; /* Texto oscuro */
+            line-height: 1.6;
+        }
+        .main-content .section ul li {
+            margin: 10px 0;
+            align-items: flex-start;
+        }
+        .main-content .section ul li strong {
+            color: #333; /* Texto oscuro */
+        }
+        .educacion {
+            background: transparent;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .educacion h2 {
+            color: #333; /* Texto oscuro */
+        }
+        .educacion p {
+            color: #333; /* Texto oscuro */
+            margin: 5px 0;
+        }
+        /* Estilos para las barras de progreso mejoradas */
+        .skill {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+            font-size: 0.95em;
+        }
+        .skill-name span {
+            color: #777; /* Color del porcentaje */
+            font-weight: bold;
+        }
+        .skill-bar {
+            width: 100%;
+            height: 10px;
+            background: #ddd; /* Fondo de la barra */
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        .skill-bar .bar {
+            height: 100%;
+            background: #777; /* Color de la barra */
+            border-radius: 5px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: width 0.5s ease-in-out;
+        }
+        .skill-bar .bar.python { width: 90%; }
+        .skill-bar .bar.javascript { width: 80%; }
+        .skill-bar .bar.html { width: 95%; }
+        .skill-bar .bar.sql { width: 85%; }
+        .skill-bar .bar.mongodb { width: 75%; }
+        .skill-bar .bar.linux { width: 90%; }
+        .skill-bar .bar.bash { width: 85%; }
+        .skill-bar .bar.ciberseguridad { width: 80%; }
+        .skill-bar .bar.redes { width: 97%; }
+        .skill-bar .bar.liderazgo { width: 100%; }
+        .skill-bar .bar.Equipo { width: 93%; }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile-pic">
+                <img src="foto.jpg" alt="Foto de perfil">
+            </div>
+            <h1>Emmanuel Flores Vazquez</h1>
+            <h3>T.S.U TIC Área Infraestructura de Redes Digitales</h3>
+            <div class="contacto">
+                <h2>Contacto</h2>
+                <p><i class="fas fa-envelope icon"></i> manegg011@gmail.com</p>
+                <p><i class="fas fa-phone icon"></i> 729 379 7355</p>
+            </div><br><br><br><br>
+            <div class="habilidades">
+                <h2>Habilidades Clave</h2>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span><i class="fas fa-code icon"></i> Python</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="bar python"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span><i class="fas fa-code icon"></i> JavaScript</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="bar javascript"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span><i class="fas fa-code icon"></i> HTML</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="bar html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span><i class="fas fa-code icon"></i> SQL</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="bar sql"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span><i class="fas fa-code icon"></i> MongoDB</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="bar mongodb"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span><i class="fas fa-terminal icon"></i> Comandos Linux</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="bar linux"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span><i class="fas fa-terminal icon"></i> Bash</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="bar bash"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span><i class="fas fa-user-secret icon"></i> Ciberseguridad</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="bar ciberseguridad"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span><i class="fas fa-network-wired icon"></i> Redes</span>
+                        <span>97%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="bar redes"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span><i class="fas fa-users icon"></i> Liderazgo</span>
+                        <span>100%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="bar liderazgo"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span><i class="fas fa-user-friends icon"></i> Trabajo en equipo</span>
+                        <span>93%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="bar Equipo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="section">
+                <h2>Resumen Profesional</h2>
+                <p>Ser un líder en el desarrollo, análisis y gestión de proyectos tecnológicos, con un enfoque en infraestructura de redes digitales y ciberseguridad, pero con apertura a explorar y aportar en cualquier área de la tecnología. Aspiro a aplicar mis habilidades técnicas y de gestión para diseñar, implementar y optimizar soluciones innovadoras y seguras. Mi objetivo es contribuir al crecimiento de las organizaciones mediante el uso estratégico de la tecnología, asegurando eficiencia, seguridad y adaptación a un entorno en constante evolución. </p>
+            </div>
+            <div class="section">
+                <h2>Experiencia Laboral</h2>
+                <ul>
+                    <li>
+                        <i class="fas fa-briefcase icon"></i>
+                        <div>
+                            <strong>Desarrollo de Aplicación Web - Restaurante "Doña Chelita"</strong><br>
+                            Diseño e implementación de una aplicación web con múltiples funcionalidades, utilizando Python, JavaScript, HTML, SQL y MongoDB.
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-tools icon"></i>
+                        <div>
+                            <strong>Creación e Implementación de Redes LAN y WAN</strong><br>
+                            Diseño y configuración de infraestructuras de redes empresariales con protocolos avanzados como OSPF, EIGRP y GTP.
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-globe icon"></i>
+                        <div>
+                            <strong>Creación de brazalete inteligente</strong><br>
+                            Diseño, estructura, infraestructura y seguridad de esta, donde se trató area de IoT, Ciberseguridad, Big data, Adminisrtración de redes de Datos y Administración de servidores.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Educación</h2>
+                <p><i class="fas fa-university icon"></i> Universidad Tecnológica del Valle de Toluca (Actualmente  &nbsp; &nbsp; &nbsp; &nbsp; cursando)</p>
+                <p><i class="fas fa-graduation-cap icon"></i> Técnico en Programación (Titulado) </p>
+                <p><i class="fas fa-book icon"></i> TIC con especialización en Redes y Ciberseguridad</p>
+            </div>
+            <div class="section">
+                <h2>Idiomas</h2>
+                <p><i class="fas fa-language icon"></i> Español - Experto</p>
+                <p><i class="fas fa-language icon"></i> Inglés - Intermedio</p>
+            </div>
+            <div class="section">
+                <h2>Certificaciones y Cursos</h2>
+                <ul>
+                    <li>
+                    
+                        <div>
+                            <i class="fas fa-laptop-code"></i> <strong>Cursos avanzados:</strong> Java, Bash, Python, Linux, Ciberseguridad, HTML, React, APIs y Desarrollo de Proyectos.<br>
+                            <i class="fas fa-network-wired"></i> <strong>CCNAV7:</strong> Switching, Routing, and Wireless Essentials (02/05/2024)<br>
+                            <i class="fas fa-server"></i> <strong>NDG Linux Essentials</strong> (29/07/2024)<br>
+                            <i class="fas fa-project-diagram"></i> <strong>Introduction to Packet Tracer</strong> (06/12/2023)<br>
+                            <i class="fas fa-globe"></i> <strong>CCNAV7:</strong> Introduction to Networks (10/12/2023)<br>
+                            <i class="fas fa-shield-alt"></i> <strong>Introducción a Ciberseguridad</strong> (08/12/2024)<br>
+                            <i class="fas fa-building"></i> <strong>CCNA:</strong> Redes Empresariales, Seguridad y Automatización IT IRD 42 (09/09/2024)<br>
+                            <i class="fas fa-building"></i> <strong>CCNA:</strong> Redes Empresariales, Seguridad y Automatización (09/09/2024)<br>
+                            <i class="fas fa-microchip"></i> <strong>Exploración de IoT con Cisco Packet Tracer</strong> (04/09/2024)<br>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+});
+
+document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && (e.key === "u" || e.key === "U" || e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+    }
+    if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+        e.preventDefault();
+    }
+});
+
+    </script>
+</body>
+
+</html>
